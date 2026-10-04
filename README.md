@@ -1,23 +1,23 @@
-# 🏥 MediCare Hub — Personal & Family Health Companion
+# MediCare Hub — Personal & Family Health Companion
 
 > A production-style, privacy-first healthcare web application designed to help individuals and families manage clinical history, track symptoms with specialist triage, evaluate hereditary risks, receive preventive screening test reminders, book verified hospital doctors, and save on medicines via certified multi-seller price comparisons.
 
 ---
 
-## 🌟 Highlights & Key Features
+## Highlights & Key Features
 
-### 1. 🩺 Medical History Vault
+### 1. Medical History Vault
 - Full CRUD for chronic conditions, past surgeries, verified drug allergies, and active medications.
 - Track diagnosis dates, clinical status (*Active*, *Managed*, *Resolved*), triggers, and hospital notes.
 - Family member isolation: Switch view to inspect records for yourself or dependents.
 
-### 2. 🤒 Symptoms Tracker with Specialist Triage
+### 2. Symptoms Tracker with Specialist Triage
 - Log physical symptoms with severity (*Mild*, *Moderate*, *Severe*), duration, and onset dates.
 - Interactive chronological timeline grouped by date.
 - **Intelligent Specialist Recommender:** Automatically directs users to relevant medical specialists (e.g. Neurologist for tension headaches, Cardiologist for chest tightness, Dermatologist for hives).
 - **Mandatory Clinical Disclaimer:** Prominently states that triage suggestions are informational and do not replace professional physician consultations.
 
-### 3. 🧬 Family Medical History & Hereditary Risk Engine
+### 3. Family Medical History & Hereditary Risk Engine
 - Biological relative health registry (parents, siblings, grandparents).
 - **Automated Hereditary Analysis:** Detects familial predispositions for:
   - Coronary Artery & Cardiovascular Disease
@@ -26,43 +26,43 @@
   - Familial Oncology Awareness
 - Provides clinical risk levels (*Moderate*, *Elevated*), affected relatives list, specific preventive screening actions (ApoB, HbA1c, CAC scoring), and prompts to discuss with your doctor.
 
-### 4. 🧪 Recommended Preventive Tests
+### 4. Recommended Preventive Tests
 - Clinical preventive screening suggestions based on adult guidelines (Complete Blood Count, Comprehensive Lipid Profile, HbA1c, Thyroid Stimulating Hormone, Vitamin D & B12).
 - One-click **Due / Completed** status toggling.
 - Customizable reminder switches and custom test addition.
 
-### 5. 📅 Doctor Check-ups & Appointments
+### 5. Doctor Check-ups & Appointments
 - Seeded top hospital specialists across New Delhi, Mumbai, Bangalore, Gurgaon, Hyderabad.
 - View doctor qualifications, hospital affiliations, consultation fees, and patient ratings.
 - Real-time time slot booking, collision prevention, rescheduling, and cancellation.
 - **"Suggested Doctors for You"** section tailored to your active symptoms or medical conditions.
 
-### 6. 📄 Encrypted Medical Reports Vault
+### 6. Encrypted Medical Reports Vault
 - Upload lab PDFs, X-ray scans, and discharge summaries (with MIME-type and 10MB size validation).
 - Categorized by type (*Lab Test*, *Radiology*, *Prescription*, *Discharge Summary*).
 - Instant in-browser modal preview and secure direct download.
 
-### 7. 🪪 Verified Patient ID Card
+### 7. Verified Patient ID Card
 - Unique digital patient identity (e.g. `MCH-2026-78421`).
 - Authentic SVG QR Code containing verification portal metadata.
 - Official green **"Verified Patient"** badge once email is confirmed.
 - One-click print layout and clipboard copy.
 
-### 8. 💊 Medicine Store with Multi-Seller Price Comparison
+### 8. Medicine Store with Multi-Seller Price Comparison
 - Catalog with composition, dosage form, packaging, manufacturer, and CDSCO/WHO-GMP verified batch numbers.
 - **Compare Prices Panel:** Displays live pricing across 3+ certified sellers (*Apollo Pharmacy*, *Tata 1mg*, *Netmeds*, *PharmEasy*), automatically highlighting the lowest seller with a **"Best Price"** tag.
 - **Prescription Gate:** Items flagged as prescription-required (*Rx*) mandate uploading a physician prescription file before checkout.
 - **Mock Payment Gateway:** Structured integration point simulating UPI, Credit/Debit Cards, Net Banking, and COD.
-- **Live Order Tracking Timeline:** 5-stage progression (*Ordered* ➔ *Pharmacist Verified* ➔ *Packed* ➔ *Shipped* ➔ *Delivered*).
+- **Live Order Tracking Timeline:** 5-stage progression (*Ordered* -> *Pharmacist Verified* -> *Packed* -> *Shipped* -> *Delivered*).
 
-### 9. 👥 Family Profile Switcher & Settings
+### 9. Family Profile Switcher & Settings
 - Switch between managing your own health records and any linked family member (*Child*, *Parent*, *Spouse*, *Sibling*, *Other*).
 - Data privacy: Export complete health records in JSON format.
 - Account deletion with password confirmation.
 
 ---
 
-## 🎨 Design System
+## Design System
 
 | Element | Specification |
 | :--- | :--- |
@@ -71,11 +71,11 @@
 | **Backgrounds** | Clean white (`#FFFFFF`) and soft pink-tinted off-white (`#FFF8F9`, `#FFF1F3`) |
 | **Borders & Shadows** | Soft rounded cards (`rounded-3xl`), gentle shadows (`shadow-soft`) |
 | **Typography** | Modern sans-serif via Google Fonts (`Inter` and `Poppins`) |
-| **Dashboard Emojis** | Realistic emojis for all 9 health section cards (`🩺`, `🤒`, `🧬`, `🧪`, `📅`, `📄`, `🪪`, `👨‍⚕️`, `💊`) |
+| **Dashboard Modules** | Clear section cards for all 9 health modules |
 
 ---
 
-## 🔒 Security & Privacy (Non-Negotiable Standards)
+## Security & Privacy (Non-Negotiable Standards)
 
 1. **Authentication:** JWT tokens stored in `httpOnly`, `sameSite: 'lax'` secure cookies; passwords encrypted with bcrypt (10 rounds).
 2. **Rate Limiting:** Brute-force protection on authentication routes (`express-rate-limit`).
@@ -89,7 +89,7 @@
 
 ---
 
-## 🚀 Getting Started Locally
+## Getting Started Locally
 
 ### Prerequisites
 - Node.js **v18+** (Tested on Node v24)
@@ -114,12 +114,12 @@ npm run seed
 npm run dev
 ```
 This runs both servers concurrently:
-- 🌐 **Frontend:** [http://localhost:5173](http://localhost:5173)
-- ⚙️ **Backend API:** [http://localhost:5000](http://localhost:5000)
+- **Frontend:** [http://localhost:5173](http://localhost:5173)
+- **Backend API:** [http://localhost:5000](http://localhost:5000)
 
 ---
 
-## 🔑 Pre-Seeded Test Credentials
+## Pre-Seeded Test Credentials
 
 | Role | Email | Password | Details |
 | :--- | :--- | :--- | :--- |
@@ -130,7 +130,7 @@ This runs both servers concurrently:
 
 ---
 
-## 📁 Repository Architecture
+## Repository Architecture
 
 ```text
 Medicare/
@@ -187,7 +187,7 @@ Medicare/
         │   ├── Navbar.jsx    # Responsive nav, brand logo, profile switcher, cart badge
         │   ├── Footer.jsx    # Emergency disclaimer, links, legal credentials
         │   ├── Modal.jsx     # Accessible dialog with ESC listener & focus trap
-        │   ├── SectionCard.jsx# Colored pastel cards with realistic emojis
+        │   ├── SectionCard.jsx# Colored pastel cards with icons
         │   ├── HealthOverviewStrip.jsx # Next checkup, tests due, recent report
         │   ├── MedicalDisclaimer.jsx # Reusable clinical information warning
         │   ├── Skeleton.jsx  # Shimmering loading placeholders
@@ -199,7 +199,7 @@ Medicare/
             ├── LandingPage.jsx       # Hero, features, how it works, trust badges
             ├── LoginPage.jsx         # Sign in, 1-click demo login, forgot password modal
             ├── SignupPage.jsx        # Real-time password strength meter & 6-digit OTP
-            ├── DashboardPage.jsx     # Greeting card ("Hey, what's up 👋"), 9 sections
+            ├── DashboardPage.jsx     # Greeting card ("Hey, what's up"), 9 sections
             ├── MedicalHistoryPage.jsx# Categorized clinical history CRUD
             ├── SymptomsTrackerPage.jsx# Symptom timeline & specialist triage
             ├── FamilyGeneticPage.jsx # Hereditary risk panel & relative conditions
@@ -215,31 +215,28 @@ Medicare/
 
 ---
 
-## 📋 Comprehensive Feature Checklist
+## Comprehensive Feature Checklist
 
 - [x] **Tech Stack:** React + Vite + Tailwind CSS, Node.js + Express, SQLite with WAL mode, JWT in httpOnly cookies, bcrypt hashing.
 - [x] **Design Tokens:** Primary pinkish red (`#E11D48`), secondary medical green (`#10B981`), rounded-3xl cards, Inter/Poppins fonts.
 - [x] **Landing Page:** Hero with trust badges, how it works 4-step guide, 9 feature spotlights, call to action.
 - [x] **Authentication:** Full name, email, phone, DOB, password strength meter, password match, 6-digit OTP verification, forgot/reset password flow, rate-limited attempts.
-- [x] **Dashboard Greeting Card:** Exactly matches *"Hey, what's up 👋"*, user's name in large text, then *"Hope you're doing fine 💗"* underneath.
+- [x] **Dashboard Greeting Card:** Matches *"Hey, what's up"*, user's name in large text, then *"Hope you're doing fine"* underneath.
 - [x] **Health Overview Strip:** Upcoming appointment, tests due count, latest medical report.
-- [x] **9 Section Cards with Realistic Emojis:**
-  1. `🩺 Medical History` (Conditions, surgeries, allergies, medications)
-  2. `🤒 Symptoms Tracker` (Severity, duration, timeline, specialist recommendation, disclaimer)
-  3. `🧬 Family Medical History` (Relatives conditions, hereditary risk analysis, screening advice)
-  4. `🧪 Recommended Tests` (Preventive suggestions, Due/Done toggle, reminders)
-  5. `📅 Doctor Check-ups` (Book, reschedule, cancel, time slots)
-  6. `📄 Medical Reports` (PDF/Image upload, validation, preview, download)
-  7. `🪪 Verified Patient ID` (Unique ID, QR code, green verified badge, print layout)
-  8. `👨‍⚕️ Find Doctors` (Specialty, city, disease, rating filters, suggested doctors)
-  9. `💊 Medicine Store` (Catalog, verified badge, 3+ seller price comparison highlighting lowest price, prescription check, mock payment, order tracking)
+- [x] **9 Section Cards:**
+  1. `Medical History` (Conditions, surgeries, allergies, medications)
+  2. `Symptoms Tracker` (Severity, duration, timeline, specialist recommendation, disclaimer)
+  3. `Family Medical History` (Relatives conditions, hereditary risk analysis, screening advice)
+  4. `Recommended Tests` (Preventive suggestions, Due/Done toggle, reminders)
+  5. `Doctor Check-ups` (Book, reschedule, cancel, time slots)
+  6. `Medical Reports` (PDF/Image upload, validation, preview, download)
+  7. `Verified Patient ID` (Unique ID, QR code, green verified badge, print layout)
+  8. `Find Doctors` (Specialty, city, disease, rating filters, suggested doctors)
+  9. `Medicine Store` (Catalog, verified badge, 3+ seller price comparison highlighting lowest price, prescription check, mock payment, order tracking)
 - [x] **Family Profile Switcher:** Seamlessly switch active view between primary account and spouse, child, or parent profiles.
 - [x] **Security & Privacy:** Explicit signup consent, data export in JSON, account deletion, medical disclaimers, and DPDP/HIPAA launch roadmap notes.
 
 ---
 
-## ⚖️ Legal & Medical Disclaimer
+## Legal & Medical Disclaimer
 *MediCare Hub is an informational health companion application. It does not provide medical diagnoses, clinical treatment, or emergency triage. For medical emergencies, always contact local emergency services immediately.*
-#   M e d i c a r e H u b  
- #   M e d i c a r e H u b  
- 
