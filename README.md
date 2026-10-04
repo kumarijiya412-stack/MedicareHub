@@ -241,4 +241,5 @@ Medicare/
 ## ⚖️ Legal & Medical Disclaimer
 *MediCare Hub is an informational health companion application. It does not provide medical diagnoses, clinical treatment, or emergency triage. For medical emergencies, always contact local emergency services immediately.*
 #   M e d i c a r e H u b  
+ #   M e d i c a r e H u b  
  
